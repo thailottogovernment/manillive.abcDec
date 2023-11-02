@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../image/preloading.gif') no-repeat center;
+    z-index: 9999;
+}
+
+.heading_text {
+    background: #C94E4E;
+}
+
+.heading_text h1 {
+    color: #fff;
+    padding: 35px 0px;
+}
+
+.banar {
+	padding: 70px 0px;
+	background: url(../image/new-add/img-01.png) no-repeat scroll 0 0 / 100% 100%;
+	height: 300px;
+	border-bottom: 3px solid red;
+}
+.main_result_area {
+    /*  background: url(../image/image.jpg) no-repeat scroll 0 0 / 100% 100%;*/
+    /*    background-color: #4789E1;*/
+    padding: 0px 0px 30px 0px;
+    background: #A47272;
+}
+
+.result_date {}
+
+.result_date h1 {
+    font-size: 36px;
+    color: #ffffff;
+    padding: 5px 0px;
+}
+
+.result_btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.result_btn .resultButton {
+    font-size: 40px;
+    color: #000;
+    background: #e0dddd;
+    border: gray;
+    font-weight: 800;
+    box-shadow: 5px 5px 12px 2px rgb(16, 14, 14);
+    transition: 0.5s;
+    width: 120px;
+    background: rgba(7, 208, 255, 0.9);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 2px solid #000;
+    height: 45px;
+    width: 45px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.live_result {
+    padding: 10px 0px;
+}
+
+/*Change location start*/
+.headoffice_name h4 {
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/*start location area*/
+.location_area {
+    padding: 25px 0px;
+}
+
+.heaidng_h {
+    margin: 0 auto;
+}
+
+.location_area {
+    padding: 25px 0px;
+    background: linear-gradient(to right, rgb(177, 56, 168), rgb(250, 116, 5));
+    color: yellow;
+}
+
+.locaton {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location_icon {
+    margin-right: 25px;
+}
+
+.location_icon i {
+    font-size: 36px;
+    color: yellow;
+}
+
+.location_text {}
+
+.location_text h1 {
+    font-size: 20px;
+}
+
+.location_text h2 {
+    font-size: 16px;
+}
+
+.phone {
+    margin-left: 55px;
+}
+
+/*map area 2nd html start*/
+.location_map {
+    text-align: center;
+    width: 100%;
+}
+
+.location_map iframe {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.map_area {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4E7FC9;
+    padding: 25px;
+}
+
+.back_icon {}
+
+.back_icon i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.back_location {}
+
+.back_location p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/*map area 2nd html end*/
+/*edit Css*/
+/*mebmebr list start*/
+.main_member_area {
+    background: #ccfbc8;
+}
+
+.member_list {}
+
+.member_list h1 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #560ef4;
+}
+
+.member_list h1 i {
+    font-size: 18px;
+    margin-right: 17px;
+    color: #560ef4;
+}
+
+.drow_date h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ef2207;
+}
+
+/*mebmebr list end*/
+.card-text {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.headoffice {
+    padding: 0px 0px;
+    position: relative;
+    color: #fff;
+    background: linear-gradient(90deg, #ffa9a9, #64a1e0, #ffa9a9, #64a1e0);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBG 7s ease infinite forwards;
+    animation: gradientBG 7s ease infinite forwards;
+}
+
+@-webkit-keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.table {
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.t_head {
+    color: red;
+    background: yellow;
+    border: 5px solid red;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.body-border {
+    border: 5px solid red;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ep-logo {
+    flex-basis: 25%;
+}
+
+.ep-logo img {
+    max-width: 100px;
+}
+
+.ep-text {
+    flex-basis: 75%;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ep-text h6 {
+    font-size: 22px;
+    word-spacing: 10px;
+}
+
+.card-text {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.m-toggle {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.m-toggle button {
+    font-size: 22px;
+    color: yellow;
+    font-weight: 700;
+}
+
+.m-toggle button:hover {
+    color: red;
+    background: yellow;
+}
+
+@media all and (max-width: 480px) {
+    .table-striped {
+        display: none;
+    }
+}
+
+.live_result a button {
+    display: inline-block;
+    background: #c2ea9b;
+    font-size: 22px;
+    color: #fd1d1d,
+}
+
+/*new add*/
+.bg {
+    background: #fff;
+}
+
+.paper_area {
+    text-align: center;
+}
+
+.head_heading {}
+
+.head_heading h1 {
+    font-size: 27px;
+    font-weight: 900;
+    margin-top: 18px;
+}
+
+.head_heading h4 {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 900;
+    border-bottom: 3px solid #000000;
+}
+
+.head_heading p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: 18px;
+    text-align: left;
+    padding: 15px 10px;
+    padding-top: 0px;
+}
+
+.game_paper {}
+
+.game_paper a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffcc06;
+    font-size: 27px;
+    border-radius: 10px;
+    background: #6c390c;
+    padding: 7px 10px;
+    box-shadow: 0px 0px 10px 0px #gray;
+    font-weight: 900;
+}
+
+.game_paper p {
+    font-size: 20px;
+    color: #f00;
+    font-weight: 900;
+    padding: 20px 0px 10px;
+}
+
+.ep-item {}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f00;
+}
+
+.down_image_area {}
+
+.down_image {}
+
+.down_image img {
+    width: 100%;
+    height: 200px;
+}
+
+.notice {}
+
+.notice h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    padding: 15px;
+    text-align: justify;
+}
+
+.up_paper_area {
+    text-align: center;
+}
+
+.up_main {}
+
+.up_main h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 25px;
+}
+
+.up_main img {
+    width: 100%;
+    height: auto;
+}
+
+.location_map {}
+
+.location_map img {
+    width: 100%;
+    height: 300px;
+}
+
+.form_area {}
+
+.form_area {}
+
+.form_group {
+    margin: 10px 0px;
+}
+
+.form_group label {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 15px;
+    color: #ffffff;
+    background: #ff0000;
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form_group input {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 15px;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+.form_group img {
+    width: 100%;
+}
+
+.live_result a button {
+    display: inline-block;
+    background: #81ff05;
+    font-size: 22px;
+    color: #fd1d1d !important;
+    font-weight: 700;
+}
+
+.paper_area {
+    background-color: #74ff0070;
+}
+
+.down_image {
+    margin: 0;
+    padding: 0;
+}
+
+.main_result_area {
+	position: relative;
+	padding-top: 14px;
+}
+
+.newEffectLogo {
+    position: absolute;
+    top: 4%;
+    right: 0%;
+}
+
+.newEffectLogo .effectLogo {}
+
+.notice {
+    background: yellow;
+}
+.location_area{
+    position: relative;
+}
+.updateLogo{}
+.updateLogo .thaiLogo {
+	position: absolute;
+	top: 3%;
+	right: 0%;
+	height: 123px;
+	width: 160px;
+}
+
+.updateLogo .exclesive {
+	position: absolute;
+	top: 32%;
+	right: 1%;
+	height: 40px;
+	width: 142px;
+
+}
